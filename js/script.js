@@ -19,7 +19,7 @@ $(document).ready(function(){
             var hash = this.hash;
             $('html, body').animate({
               scrollTop: $(hash).offset().top
-            }, 400, function(){
+            }, 500, function(){
               window.location.hash = hash;
             });
           }
@@ -28,5 +28,11 @@ $(document).ready(function(){
       $('.glyphicon-chevron-right').addClass("animated fadeInRight");
       $('.glyphicon-chevron-left').addClass("animated fadeInLeft");
   });
+
+  $('.about h2, .about p').css('opacity', 0);
+  $('.about h2, .about p').waypoint(function() {
+      $('.about h2, .about p').addClass('animated fadeInUp');
+  }, { offset: '50%' });
+
 
   });
