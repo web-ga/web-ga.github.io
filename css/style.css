@@ -1,3 +1,4 @@
+html { overflow-x: hidden }
 .navbar {
   font-size: 110%;
   padding: 1% 0;
@@ -91,7 +92,8 @@
   font-weight: 300
 }
 
-.visit {
+.visit,
+.contact button {
   border-radius: 0!important;
   border: none;
   margin: 2% auto;
@@ -101,6 +103,7 @@
 }
 
 .visit:hover,
+.contact button:hover,
 .glyphicon-menu-hamburger { color: #fff }
 
 .about .jumbotron {
@@ -113,7 +116,8 @@
 
 .about h2,
 .team h2,
-.services h2 {
+.services h2,
+.contact h2 {
   font-size: 280%;
   font-family: Oswald, 'sans-serif'
 }
@@ -248,5 +252,32 @@
 footer {
   font-family: lato, 'sans-serif';
   font-weight: 300;
+  border-top: .1px solid #eee
 }
 footer p { padding: 1% }
+
+.contact {
+  padding: 5% 0!important;
+  margin: 0!important;
+  border-radius: 0!important;
+}
+.contact h2 {
+  color: #e74c3c
+}
+
+.input1 { animation-delay: .3s }
+
+.input2 { animation-delay: .6s; }
+
+
+.contact form { padding: 2% }
+
+.input-group-addon { background-color: #fff }
+
+.input-group input { padding: 3% }
+
+.message {
+  resize: none;
+  animation-delay: .8s;
+  padding: 2% 2% 5%
+}

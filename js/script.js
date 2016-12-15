@@ -13,7 +13,7 @@ $(document).ready(function(){
          }
       });
 
-      $("#home-link, #about-link, #team-link, #services-link").on('click', function(event) {
+      $("#home-link, #about-link, #team-link, #services-link, #contact-link").on('click', function(event) {
           if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
@@ -54,10 +54,16 @@ $(document).ready(function(){
       $('.services h2').addClass('animated fadeInUp');
   }, { offset: '80%' });
 
+  $('.contact h2, .input1, .input2, .contact button, .contact textarea').css('opacity', 0);
+  $('.contact h2, .input1, .input2, .contact button, .contact textarea').waypoint(function() {
+      $('.contact h2, .input1, .input2, .contact button, .contact textarea').addClass('animated fadeInUp');
+  }, { offset: '80%' });
+
   $('.services-icon1, .services-icon2, .services-icon3').css('opacity', 0);
   $('.services-icon1, .services-icon2, .services-icon3').waypoint(function() {
-      $('.services-icon1, .services-icon2, .services-icon3').addClass('animated fadeInUp');
+      $('.services-icon1, .services-icon2, .services-icon3').addClass('animated fadeInLeft');
   }, { offset: '80%' });
+
 
   $('.about-jasper .a-toggle').click(function(){
     $('.about-jasper .p-toggle').toggle("clip", 1000);
