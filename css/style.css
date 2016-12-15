@@ -12,7 +12,6 @@
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
       color: #e74c3c!important;
-      border-bottom: 2px solid #e74c3c;
       background: transparent
  }
 
@@ -23,7 +22,7 @@
 
 .navbar-header .navbar-brand {
   position: absolute;
-  top: 4px;
+  top: 2px;
   transition: .5s
 }
 
@@ -36,7 +35,9 @@
 .home,
 .carousel-inner,
 .carousel,
-.home-bot-left {
+.home-bot,
+.about,
+.services {
   padding: 0!important;
   margin: 0!important;
   border-radius: 0!important
@@ -45,6 +46,7 @@
 .carousel:hover .carousel-control { display: block }
 
 .carousel-control {
+  z-index: 1;
   display: none;
   background: none!important
 }
@@ -85,7 +87,8 @@
   line-height: 150%;
   font-size: 120%;
   animation-delay: .7s;
-  font-family: Lato, 'sans-serif'
+  font-family: Lato, 'sans-serif';
+  font-weight: 300
 }
 
 .visit {
@@ -100,24 +103,150 @@
 .visit:hover,
 .glyphicon-menu-hamburger { color: #fff }
 
-.about { padding: 10% 0 }
+.about .jumbotron {
+  margin: 0!important;
+  border-radius: 0!important;
+  padding: 15% 0!important;
+  background: url('../content/img/about-background.jpg') no-repeat fixed center;
+  background-size: 100% 100%
+}
 
-.about h2 {
+.about h2,
+.team h2,
+.services h2 {
   font-size: 280%;
   font-family: Oswald, 'sans-serif'
 }
 
-.about span { color: #e74c3c }
+.about span,
+.team span,
+.team .social a:hover { color: #e74c3c }
 
 .about p {
   width: 50%;
   margin: auto;
   line-height: 150%;
   font-family: lato, 'sans-serif';
+  font-weight: 300;
   font-size: 140%;
+  color: #fff;
   animation-delay: .2s
 }
 
-@media(max-width: 700px){
-  .about p { width: 90% }
+@media(max-width: 700px) { .about p { width: 90% }}
+
+.home-bot-icon1,
+.home-bot-icon2,
+.home-bot-icon3,
+.home-bot-icon4 {
+  height: 20vh;
+  padding: 1%;
+  color: white;
 }
+
+.home-bot-icon1 { background-color: #191919 }
+.home-bot-icon2 { background-color: #323232 }
+.home-bot-icon3 { background-color: #4c4c4c }
+.home-bot-icon4 { background-color: #666 }
+
+.home-bot-icon1 .fa,
+.home-bot-icon1 h4 { animation-delay: 0.2s }
+
+.home-bot-icon2 .fa,
+.home-bot-icon2 h4 { animation-delay: 0.4s }
+
+.home-bot-icon3 .fa,
+.home-bot-icon3 h4 { animation-delay: 0.6s }
+
+.home-bot-icon4 .fa,
+.home-bot-icon4 h4 { animation-delay: 0.8s }
+
+
+.home-bot h4 { font-family: "Roboto", "sans-serif"; }
+
+.home-bot .fa {
+  padding: 4%;
+  border: 2px solid #e74c3c;
+  color: #e74c3c
+}
+
+.team {
+  padding: 4% 2% 7%;
+}
+
+.about-carl,
+.about-jasper { animation-delay: .5s }
+
+.team h4,
+.services h4 {
+  font-family: Roboto, 'sans-serif';
+  color: #e74c3c
+}
+
+.team p {
+  font-family: Lato, 'sans-serif';
+  font-size: 120%;
+  font-weight: 300
+}
+
+.team hr {
+  width: 20%;
+  padding: .1%;
+  margin: 1% auto;
+  color: #000;
+  background-color: #000;
+  border-color: #000
+}
+
+.team .social a {
+  padding: 2%;
+  color: #000
+}
+
+.about-jasper .p-toggle,
+.about-carl .p-toggle { display: none }
+
+.about-jasper .a-toggle,
+.about-carl .a-toggle {
+  margin: 2%;
+  color: #e74c3c
+}
+
+.a-toggle:hover {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none
+}
+.services .jumbotron {
+  border-radius: 0!important;
+  margin: 0!important;
+  padding: 10% 0 12%;
+  background: url('../content/img/laptop-photo.jpg') no-repeat center fixed;
+  background-size: 100% 100%
+}
+
+.services h2 {
+  margin: 0 0 5%;
+  color: #e74c3c
+}
+
+.services .fa { color: #fff }
+
+.services-icon1 { animation-delay: .2s }
+
+.services-icon2 { animation-delay: .4s }
+
+.services-icon3 { animation-delay: .6s }
+
+.services p {
+  font-family: lato, 'sans-serif';
+  font-weight: 300;
+  font-size: 120%;
+  color: #fff
+}
+
+footer {
+  font-family: lato, 'sans-serif';
+  font-weight: 300;
+}
+footer p { padding: 1% }
