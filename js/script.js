@@ -54,6 +54,21 @@ $(document).ready(function(){
       $('.services h2').addClass('animated fadeInUp');
   }, { offset: '80%' });
 
+  $('.info .info1').css('opacity', 0);
+  $('.info .info1').waypoint(function() {
+      $('.info .info1').addClass('fadeInUp');
+  }, { offset: '100%' });
+
+  $('.info .info2').css('opacity', 0);
+  $('.info .info2').waypoint(function() {
+      $('.info .info2').addClass('fadeInUp');
+  }, { offset: '100%' });
+
+  $('.info .info3').css('opacity', 0);
+  $('.info .info3').waypoint(function() {
+      $('.info .info3').addClass('fadeInUp');
+  }, { offset: '100%' });
+
   $('.contact h2, .input1, .input2, .contact button, .contact textarea').css('opacity', 0);
   $('.contact h2, .input1, .input2, .contact button, .contact textarea').waypoint(function() {
       $('.contact h2, .input1, .input2, .contact button, .contact textarea').addClass('animated fadeInUp');
@@ -75,4 +90,5 @@ $(document).ready(function(){
     $('.about-carl .a-toggle').toggleClass("fa-angle-double-up").toggleClass("fa-angle-double-down");
   });
 
+  $('.form-validate').validate();
   });

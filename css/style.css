@@ -44,7 +44,10 @@ html { overflow-x: hidden }
   border-radius: 0!important
 }
 
-.carousel:hover .carousel-control { display: block }
+.carousel:hover .carousel-control {
+  display: block;
+  z-index: 1;
+}
 
 .carousel-control {
   z-index: 1;
@@ -53,6 +56,7 @@ html { overflow-x: hidden }
 }
 
 .carousel-caption {
+  z-index: 1;
   left: 0;
   top: 0;
   width: 50%;
@@ -66,8 +70,7 @@ html { overflow-x: hidden }
 @media(max-height:400px) {
   .carousel,
   .carousel .item > img { height: 120vh }
-  .carousel-caption { height: inherit }
-}
+  .carousel-caption { height: inherit }}
 
 @media(max-height:250px) {
   .carousel,
@@ -252,9 +255,9 @@ html { overflow-x: hidden }
 footer {
   font-family: lato, 'sans-serif';
   font-weight: 300;
-  border-top: .1px solid #eee
+  border-top: .1px solid #eee;
 }
-footer p { padding: 1% }
+footer p { padding: 1%;}
 
 .contact {
   padding: 5% 0!important;
@@ -281,3 +284,16 @@ footer p { padding: 1% }
   animation-delay: .8s;
   padding: 2% 2% 5%
 }
+.info {
+  padding: 5% 10%;
+  font-size: 120%;
+  font-family: lato, 'sans-serif';
+  font-weight: 300
+}
+.info i { color: #e74c3c }
+
+.info1 { animation-delay: .3s }
+
+.info2 { animation-delay: .6s }
+
+.info3 { animation-delay: .9s }
