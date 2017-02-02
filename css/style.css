@@ -96,7 +96,7 @@ ion-header-bar {
 }
 
 .about-h32 {
-  width: 150px;
+  width: auto;
   padding: 2%;
   margin: auto;
   border: 2px solid #7a081f;
