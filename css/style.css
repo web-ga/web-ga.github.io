@@ -7,6 +7,7 @@ ion-header-bar {
 
 .header-p {
   color: #fff;
+  padding: 5px 0 0;
   font-family: lato, sans-serif;
   font-weight: 400;
   font-size: 17px;
