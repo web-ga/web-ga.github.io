@@ -15,6 +15,10 @@ ion-header-bar {
   font-size: 17px;
 }
 
+.logo {
+  width: 45px
+}
+
 .landing img {
   width: 100%;
   animation-delay: .2s;
@@ -28,8 +32,12 @@ ion-header-bar {
   padding: 2%;
   font-family: lato, sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   animation-delay: .4s;
+}
+
+.abc {
+  margin-bottom: 500px;
 }
 
 .dep1 {
@@ -74,6 +82,41 @@ ion-header-bar {
   font-weight: 300;
   color: #fff;
   font-size: 12px;
+}
+
+.announcements {
+  width: 98%;
+  padding: 2% 1%;
+  margin: 10px auto;
+  clear: both;
+  box-shadow: 0 0 2px #202020;
+  background-color: #fff;
+}
+
+.announcements h4 {
+  color: #7a081f;
+  font-family: oswald, sans-serif;
+}
+
+.post {
+  width: 98%;
+  margin: 20px auto;
+  padding: 1%;
+  border: 1px solid #cc9832;
+}
+
+.post h5 {
+  padding: 1%;
+  width: 120px;
+  font-family: oswald, sans-serif;
+  border: 1px solid #7a081f;
+  text-align: center;
+}
+
+.post p {
+  font-family: lato, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .about-to-html {
