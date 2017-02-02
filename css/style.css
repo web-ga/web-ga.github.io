@@ -6,7 +6,6 @@ ion-header-bar {
 }
 
 .header-p {
-  padding: 20% 0;
   color: #fff;
   font-family: lato, sans-serif;
   font-weight: 400;
@@ -15,7 +14,6 @@ ion-header-bar {
 
 .landing img {
   width: 100%;
-  height: 150px;
   animation-delay: .2s;
 }
 
