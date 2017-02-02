@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Holy Angel University</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link  href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <p class="header-p"><a href="index.html" class="ion-chevron-left about-to-html"></a>Holy Angel University</p>
+      </ion-header-bar>
+      <ion-content>
+        <div class="landing">
+          <img class="animated fadeInUp" src="img/holyangeluniversity_banner.jpg" alt="Holy Angel University Image">
+          <h3 class="animated fadeInUp about-h31">HISTORY</h3>
+          <hr class="about-hr1 animated fadeInUp">
+          <p class="about-landing-p animated fadeInUp">In June 1933, Holy Angel Academy (HAA) opened its doors to a modest group of 78 high school students in the Holy Rosary Parish Convent. It was initiated through the joint efforts of the late Don Juan D. Nepomuceno, a known philanthropist/prominent businessman and Fr. Pedro P. Santos, then parish priest of the town of Angeles and later Archbishop of Nueva Caceres. Its primary purpose was to offer Catholic education in the secondary level, which was the felt need of the community at that time. It was organized as a non-stock, non-profit corporation oriented towards service to the community.</p>
+          <div class="about-span1"><h3 class="about-h32">MISSION</h3></div>
+          <br>
+          <p class="about-landing-p">To offer accessible quality education that transforms students into persons of conscience, competence, and compassion, all for the glory of God.</p>
+          <div class="about-span1"><h3 class="about-h32">VISSION</h3></div>
+          <br>
+          <p class="about-landing-p">To become a role-model catalyst or countryside development and one of the most influential, best-managed Catholic universities in Asia Pacific region.</p>
+          <div class="about-span1"><h3 class="about-h32">CAMPUS MAP</h3></div>
+          <br>
+          <img class="campusmap" src="img/hau_campusmap_2016.jpg" alt="Holy Angel University Campus Map">
+          <br><br>
+        </div>
+        <footer>© 2017. All Rights Reserverd . Holy Angel University</footer>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>

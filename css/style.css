@@ -1,5 +1,7 @@
 /* Empty. Add your own CSS if you like */
-ion-content { background-color: #eee!important }
+ion-content {
+  background-color: #eee!important
+}
 
 ion-header-bar {
   background-color: #7a081f!important;
@@ -18,6 +20,10 @@ ion-header-bar {
   animation-delay: .2s;
 }
 
+.landing a {
+  text-decoration: none;
+}
+
 .landing-p {
   padding: 2%;
   font-family: lato, sans-serif;
@@ -29,6 +35,7 @@ ion-header-bar {
 .dep1 {
   float: left;
   width: 48%;
+  height: 150px;
   margin: 1%;
   text-decoration: none;
   padding: 15px 0;
@@ -45,6 +52,7 @@ ion-header-bar {
 .dep2 {
   float: left;
   width: 48%;
+  height: 150px;
   margin: 1%;
   text-decoration: none;
   padding: 15px 0;
@@ -52,8 +60,8 @@ ion-header-bar {
   background-color: #7a081f;
 }
 
-.dep1 .ion-android-contact,
-.dep2 .ion-android-contact {
+.dep1 span,
+.dep2 span {
   color: #fff;
   font-size: 50px;
 }
@@ -64,4 +72,63 @@ ion-header-bar {
   font-weight: 300;
   color: #fff;
   font-size: 12px;
+}
+
+.about-to-html {
+  color: #fff;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.about-landing-p {
+  padding: 1% 2%;
+  font-family: lato, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.about-h31,
+.about-h32 {
+  padding: 0 2%;
+  font-family: oswald, sans-serif;
+  text-align: center;
+  animation-delay: .3s;
+}
+
+.about-h32 {
+  width: 150px;
+  padding: 2%;
+  margin: auto;
+  border: 2px solid #7a081f;
+}
+
+.about-span1 {
+  width: 160px;
+  margin: auto;
+  padding: 1%;
+  border: 2px solid #7a081f;
+}
+
+.about-hr1 {
+  width: 100px;
+  padding: .3%;
+  text-align: center;
+  color: #7a081f;
+  background-color: #7a081f;
+  border-color: #cc9832;
+  animation-delay: .3s;
+}
+
+.campusmap { width: 100% }
+
+footer {
+  clear: both;
+  padding: 5px 0;
+  background-color: #7a081f;
+  color: #fff;
+  font-family: lato, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  box-shadow: 0 0 2px #202020;
 }
