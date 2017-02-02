@@ -41,6 +41,7 @@ ion-header-bar {
   padding: 15px 0;
   text-align: center;
   background-color: #7a081f;
+  animation-delay: .5s;
 }
 
 .dep1,
@@ -58,6 +59,7 @@ ion-header-bar {
   padding: 15px 0;
   text-align: center;
   background-color: #7a081f;
+  animation-delay: .5s;
 }
 
 .dep1 span,
