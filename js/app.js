@@ -22,3 +22,9 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+ .controller("HauController", function($scope){
+   $scope.submit = function(name) {
+     alert("Thank you " + name);
+   }
+ });

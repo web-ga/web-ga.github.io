@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Holy Angel University</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald%3A700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato%3A300%2C400" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
 
     <!-- un-comment this code to enable service worker
@@ -18,7 +18,7 @@
     </script>-->
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link  href="css/animate.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
@@ -34,7 +34,7 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
-  <body ng-app="starter">
+  <body ng-app="starter" ng-controller="HauController">
 
     <ion-pane>
       <ion-header-bar class="bar-stable">
@@ -47,10 +47,10 @@
           <p class="landing-p animated fadeInUp">Holy Angel University is a private Roman Catholic university in Angeles City, Pampanga, Philippines. Founded in 1933, it is considered the first lay-founded Catholic school as well as the first co-educational Catholic high school. <a href="about.html">Learn More</a></p>
         </div>
         <div class="abc">
-          <a class="dep1 animated fadeInLeft" href="#">
+          <a class="dep1 animated fadeInLeft" href="cict.html">
             <div class="cict">
               <span class="ion-monitor"></span>
-              <p>College of Iinformation and Communications Technlogy</p>
+              <p>College of Information and Communications Technlogy</p>
             </div>
           </a>
           <a class="dep2 animated fadeInRight" href="#">
@@ -71,19 +71,19 @@
               <p>College of Nursing and Allied Medical Sciences</p>
             </div>
           </a>
-          <a class="dep1" href="#">
+          <a class="dep1 animated fadeInLeft" href="#">
             <div class="chtm">
               <span class="ion-ios-people"></span>
               <p>College of Hopitality and Tourism Management</p>
             </div>
           </a>
-          <a class="dep2" href="#">
+          <a class="dep2 animated fadeInRight" href="#">
             <div class="ccjef">
               <span class="ion-alert-circled"></span>
               <p>College of Criminal Justice Education and Forensic</p>
             </div>
           </a>
-          <a class="dep1" href="#">
+          <a class="dep1 animated fadeInLeft" href="#">
             <div class="cea">
               <span class="ion-plane"></span>
               <p>College of Engineering and Architecture</p>
@@ -94,19 +94,57 @@
           <h4>ANNOUNCEMENTS</h4>
           <hr>
           <div class="post">
-            <h5>Posted 01/29/17:</h5>
+            <h5 class="left-post"><i>Posted</i> <br>01/29/17:</h5>
             <p>CONGRATULATIONS to our new registered aeronautical engineers! Laus Deo Semper!</p>
           </div>
           <div class="post">
-            <h5>Posted 01/15/17:</h5>
+            <h5 class="left-post">Posted <br>01/17/17:</h5>
             <p>CONGRATULATIONS to our new registered civil engineers! Laus Deo Semper!</p>
           </div>
           <div class="post">
-            <h5>Posted 01/15/17:</h5>
+            <h5 class="left-post">Posted <br>01/15/17:</h5>
             <p>CONGRATULATIONS to our new certified public accountants! Laus Deo Semper!</p>
           </div>
+          <div class="post">
+            <h5 class="left-post">Posted <br>01/13/17:</h5>
+            <p>CONGRATULATIONS to our new registered electronics engineers! Laus Deo Semper!</p>
+          </div>
+          <hr>
+            <ul>
+              <li class="calendar"><a href="calendar.html">Academic Calendar</a></li>
+              <li class="announce"><a href="#">More Announcements</a></li>
+            </ul>
         </div>
-        <footer>© 2017. All Rights Reserverd . Holy Angel University</footer>
+        <div class="contact">
+          <h4>CONTACT US</h4>
+          <hr>
+          <form name="form" novalidate="">
+            <div class="list">
+              <label class="item item-input">
+                <input type="text" name="name" ng-model="name" ng-minlength="3" required autocomplete="off" placeholder="Name">
+              </label>
+              <br>
+              <label class="item item-input">
+                <input type="email" name="email" ng-model="email" ng-minlength="9" required autocomplete="off" placeholder="Email">
+              </label>
+              <br>
+              <label class="item item-input">
+                <input type="text" name="comment" ng-model="comment" ng-minlength="10" required autocomplete="off" placeholder="Comments/Suggestions">
+              </label>
+            </div>
+            <div class="padding">
+              <p ng-show="form.name.$error.required">*Name required.</p>
+              <p ng-show="form.name.$error.minlength">*Name should be at least 3 characters.</p>
+              <p ng-show="form.email.$error.required">*Email required.</p>
+              <p ng-show="form.comment.$error.required">*Comments/Suggestions required.</p>
+              <p ng-show="form.comment.$error.minlength">*Comments/Suggestions should be at least 10 characters.</p>
+            </div>
+            <div class="padding">
+              <button class="button button-block" ng-disabled="form.$invalid" ng-click="submit(name)">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+        <footer>© 2017. All Rights Reserverd | Holy Angel University</footer>
       </ion-content>
     </ion-pane>
   </body>

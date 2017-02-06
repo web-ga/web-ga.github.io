@@ -93,7 +93,19 @@ ion-header-bar {
   background-color: #fff;
 }
 
-.announcements h4 {
+.curriculum { font-size: 13px; padding: 2%; }
+.curriculum li a { text-decoration: none; color: #7a081f;}
+
+.announcements h4,
+.curriculum h4,
+.contact h4 {
+  color: #7a081f;
+  font-family: oswald, sans-serif;
+}
+.cict-course hr { margin: 0 2%; }
+.cict-course ul li { list-style-type: disc; }
+.cict-course { padding: 2%; }
+.cict-course h4 {
   color: #7a081f;
   font-family: oswald, sans-serif;
 }
@@ -107,16 +119,25 @@ ion-header-bar {
 
 .post h5 {
   padding: 1%;
-  width: 120px;
+  width: 80px;
   font-family: oswald, sans-serif;
   border: 1px solid #7a081f;
   text-align: center;
+
 }
 
 .post p {
   font-family: lato, sans-serif;
   font-weight: 400;
   font-size: 14px;
+}
+
+.contact {
+  width: 98%;
+  margin: 5px auto;
+  padding: 5px 5px;
+  box-shadow: 0 0 3px #202020;
+  background-color: #fff;
 }
 
 .about-to-html {
@@ -176,4 +197,38 @@ footer {
   font-size: 12px;
   text-align: center;
   box-shadow: 0 0 2px #202020;
+}
+.calendar { float: left; padding:0 11%; }
+.calendar a,
+.announce a {
+  text-decoration: none;
+  color: #7a081f;
+  font-family: oswald, sans-serif;
+}
+.left-post { float: left; margin: 3%;}
+
+.contact label {
+  border-radius: 5px;
+}
+
+.contact .input-label {
+  font-family: oswald, sans-serif;
+  color: #000;
+}
+
+.contact input {
+  font-family: lato,sans-serif;
+  font-weight: 400;
+}
+
+.contact button {
+  font-family: oswald, sans-serif;
+  background-color: #7a081f;
+  color: #fff;
+}
+
+.contact p {
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  cursor: #7a081f;
 }
